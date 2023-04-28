@@ -1,0 +1,233 @@
+@import url('https://fonts.cdnfonts.com/css/crime');
+@import url('https://fonts.cdnfonts.com/css/agency-fb');
+
+*,
+*::before,
+*::after {
+  color: #FAF9F6;
+  background-color: #24336F;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Agency FB', sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+html {
+  scroll-behavior: smooth;
+}
+header.navbar-container {
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-block: 1rem;
+  position: fixed;
+  z-index: 999;
+}
+
+header.navbar-container .logo img {
+  width: 100px;
+  height: 100px;
+  color: #24336F;
+}
+
+header.navbar-container .nav-list ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+  list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #FBDB12;
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  transition: all 0.1s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+  background-color: #FBDB12;
+  color: #24336F;
+}
+
+main {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 2rem 4rem;
+  flex: 2;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+}
+
+main .konten {
+  flex: 1;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+main .konten .deskripsi_Konten {
+  flex: 1 1;
+}
+
+main .konten .deskripsi_Konten .title {
+  font-size: 3.5rem;
+  margin-block: 1rem;
+  color: #FBDB12;
+  font-family: 'Agency FB', sans-serif;
+}
+
+main .konten .deskripsi_Konten p {
+  line-height: 1.7rem;
+  font-size: 1.2rem;
+  padding-bottom: 50px;
+}
+
+main .konten .deskripsi_Konten #tombol {
+  padding: 0.6rem 1.2rem;
+  margin-block-start: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Agency FB", sans-serif;
+  color: #24336F;
+
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-color: #FBDB12;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+
+main .konten .deskripsi_Konten #tombol:hover {
+  border: 3px solid #2d3e50;
+  color: #24336F;
+  background-color: #FBDB12;
+}
+
+main .konten .single_Image {
+  flex: 1;
+  flex-grow: 1;
+  display: flex;
+}
+
+main .konten .single_Image img {
+  margin: auto;
+  min-width: 250px;
+  width: 300px;
+}
+
+article {
+  box-shadow: 0 4px 6px 0 #FBDB12;
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: #3e4759; */
+  margin-top: 10px;
+}
+
+article img {
+  margin: auto;
+  min-width: 250px;
+  width: 300px;
+}
+
+article .deskripsi_Kontent_Crime .title{
+  color:#FBDB12
+}
+
+aside {
+  box-shadow: 0 4px 6px 0 #FBDB12;
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+aside .deskripsi_Konten {
+  flex: 1 1;
+}
+
+aside .deskripsi_Konten .title{
+  color: #FBDB12;
+}
+
+aside .deskripsi_Konten .afkar{
+  color: #FBDB12;
+}
+
+aside img {
+  margin: auto;
+  min-width: 250px;
+  height: 450px;
+  width: 350px;
+  margin-left: 100px;
+  object-fit: cover;
+}
+footer {
+  padding: 20px;
+  text-align: center;
+  font-size: 15px;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+footer a:hover {
+  color: #FBDB12;
+}
+
+@media screen and (max-width: 768px) {
+  header.navbar-container {
+    flex-direction: column;
+  }
+
+  header.navbar-container .nav-list ul {
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+  }
+
+  main {
+    padding: 1rem 3rem;
+  }
+
+  main .konten {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  main .konten .deskripsi_Konten .title {
+    font-size: 3rem;
+  }
+
+  main .konten .deskripsi_Konten p {
+    font-size: 1rem;
+  }
+
+  main .konten .single_Image {
+    order: -1;
+  }
+}
